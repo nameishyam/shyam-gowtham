@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+        }
+
+        .card p {
+            color: #888;
+        }
+
+        .btn-add-to-cart {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>E-commerce Website</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="item1.jpg" alt="Item 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1.</p>
+            <p>$19.99</p>
+            <button class="btn-add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="item2.jpg" alt="Item 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2.</p>
+            <p>$29.99</p>
+            <button class="btn-add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="card" id="test">
+            <img src="item3.jpg" alt="Item 3">
+            <h3>Product 3</h3>
+            <p>Description of Product 3.</p>
+            <p>$39.99</p>
+            <button class="btn-add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <script>
+        const el = document.getElementById("test")
+        console.log(el)
+        el.style.color = "red"
+        const al = document.getElementsByClassName("card")
+        console.log(al)
+        el.innerHTML = "Gowtham"
+        el.id = "el2"
+    </script>
+
+</body>
+
+</html>
